@@ -1,216 +1,181 @@
-<!DOCTYPE html>
-<html lang="en">
 
 <head>
- <meta charset="UTF-8">
- <meta http-equiv="X-UA-Compatible" content="IE=edge">
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <title>Submit Your Resume | Ruban Gino Singh | URK20CS2001</title>
-
- <link rel="icon" type="image/png" href="assets/images/head-profile.png">
-
- <style>
- * {
- margin: 0;
- padding: 0;
- box-sizing: border-box;
- }
-
- .title {
- margin: 1rem 0 2rem 0;
- }
-
- .container {
- margin: 1rem;
- padding: 2rem;
- border: 1px solid black;
- }
-
- fieldset {
- padding: 2rem;
- width: fit-content;
- }
-
- label {
- display: inline-block;
- min-width: 10rem;
- text-align: left;
- }
- table, td, th, tr{
- border: 2px solid black;
- border-collapse: collapse;
- padding: .8rem;
- }
- </style>
-</head>
-
-<body>
- <section class="container">
- <h2 class="title">Submit your resume</h2>
-
- <!-- Personal Details -->
- <div class="personal-details">
- <form action="">
- <fieldset>
- <legend>&nbsp;Personal Details&nbsp;</legend>
- <label for="fname">*First Name:</label>
- <input type="text" id="firstname" name="fname" placeholder="Enter your first name" required><br><br>
- <label for="mname">*Middle Name:</label>
- <input type="text" id="middlename" name="mname" placeholder="Enter your middle name"
- required><br><br>
- <label for="lname">*Last Name:</label>
- <input type="text" id="lastname" name="lname" placeholder="Enter your last name"><br><br>
- <label for="dob">*Date of Birth:</label>
- <input type="date" id="dob" name="dob"><br><br>
- <label for="age">*Age:</label>
- <input type="number" id="age" name="age" placeholder="18"><br><br>
- <label for="gender">*Gender: </label>
- <input type="radio" id="gender" name="male" value="Male" checked>
- <label for="gender">Male</label>
- <input type="radio" id="gender" name="male" value="Male">
- <label for="gender">Female</label><br>
- </fieldset><br>
- <input type="range" min="1" max="100" value="20" id="slider">&emsp;&emsp;<label for="slider">20% out of
- 100%</label>
- </form><br>
- </div>
-
- <!-- Address Details -->
- <div class="address-details">
- <form action="">
- <fieldset>
- <legend>&nbsp;Address Details&nbsp;</legend>
- <label for="address">Address:</label>
- <textarea cols="30" rows="2" required></textarea><br><br>
- <label for="city-town">City/Town:</label>
- <input type="text" id="city-town" name="city" required><br><br>
- <label for="state">State:</label>
- <input type="text" id="state" name="state" required><br><br>
- <label for="zip-code">Zip Code:</label>
- <input type="number" placeholder="only 6 numbers" required>
- </fieldset><br>
- <input type="range" min="1" max="100" value="40" id="slider">&emsp;&emsp;<label for="slider">40% out of
- 100%</label>
- </form><br>
- </div>
-
- <div class="contact-info">
- <form action="">
- <fieldset>
- <legend>&nbsp;Contact Information&nbsp;</legend>
- <label for="Telephone">Telephone:</label>
- <input type="number" placeholder="(044) 999-9999" required><br><br>
- <label for="mobile">*Mobile:</label>
- <input type="number" placeholder="(+91) 99999-99999" required><br><br>
- <label for="email">*Email:</label>
- <input type="email" placeholder="valid email" required><br><br>
- <label for="website">Website:</label>
- <input type="text" placeholder="valid url" required>
- </fieldset><br>
- <input type="range" min="1" max="100" value="60" id="slider">&emsp;&emsp;<label for="slider">60% out of
- 100%</label><br>
- </form><br>
- </div>
-
- <div class="education">
- <form action="">
- <fieldset>
- <legend>&nbsp;Educational Details&nbsp;</legend>
- <table>
- <tr>
- <th>Qualification</th>
- <th>Board/University</th>
- <th>Country</th>
- <th>Starting Year</th>
- <th>Ending Year</th>
- <th>Percentage</th>
- </tr>
- <tr>
- <td><input type="checkbox">10th</td>
- <td><input type="text" placeholder="Board/University"></td>
- <td>
- <select>
- <option value="choose">Choose</option>
- <option value="ind">India</option>
- <option value="us">US</option>
- <option value="nz">New Zealand</option>
- <option value="sa">South Africa</option>
- </select>
- </td>
- <td><input type="date"></td>
- <td><input type="date"></td>
- <td><input type="number" placeholder="70" style="width:40px; margin-left: 10px;"></td>
- </tr>
- <tr>
- <td><input type="checkbox">12th</td>
- <td><input type="text" placeholder="Board/University"></td>
- <td>
- <select>
- <option value="choose">Choose</option>
- <option value="ind">India</option>
- <option value="us">US</option>
- <option value="nz">New Zealand</option>
- <option value="sa">South Africa</option>
- </select>
- </td>
- <td><input type="date"></td>
- <td><input type="date"></td>
- <td><input type="number" placeholder="70" style="width:40px; margin-left: 10px;"></td>
- </tr>
- <tr>
- <td><input type="checkbox">B.Tech</td>
- <td><input type="text" placeholder="Board/University"></td>
- <td>
- <select>
- <option value="choose">Choose</option>
- <option value="ind">India</option>
- <option value="us">US</option>
- <option value="nz">New Zealand</option>
- <option value="sa">South Africa</option>
- </select>
- </td>
- <td><input type="date"></td>
- <td><input type="date"></td>
- <td><input type="number" placeholder="70" style="width:40px; margin-left: 10px;"></td>
- </tr>
- <tr>
- <td><input type="checkbox">M.Tech</td>
- <td><input type="text" placeholder="Board/University"></td>
- <td>
- <select>
- <option value="choose">Choose</option>
- <option value="ind">India</option>
- <option value="us">US</option>
- <option value="nz">New Zealand</option>
- <option value="sa">South Africa</option>
- </select>
- </td>
- <td><input type="date"></td>
- <td><input type="date"></td>
- <td><input type="number" placeholder="70" style="width:40px; margin-left: 10px;"></td>
- </tr>
- </table>
- </fieldset><br>
- <input type="range" min="1" max="100" value="80">&emsp;&emsp;<label for="slider">80% out of 100%</label>
- </form><br>
- </div>
-
- <div class="resume-upload">
- <form action="">
- <fieldset>
- <label for="attach-resume">Attach your resume in .doc or .pdf format&emsp;&emsp;</label>
- <input type="file" id="myresume" name="myresume"><br><br>
- <input type="checkbox">&nbsp;I have filled the details</td>
- </fieldset><br>
- <input type="range" min="1" max="100" value="100">&emsp;&emsp;<label for="slider">100% out of 100%</label>
- </form><br>
- </div>
- <div class="button-container" style="width: 50%; text-align: center;">
- <button type="submit" style="padding: .7rem 2rem;">Submit</button>
- </div>
- </section>
-
-</body>
-
-</html>
-            
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+    <title>KARTHIK REDDY</title>
+  
+    <link rel="icon" type="image/png" href="assets/images/head-profile.png">
+   
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+  
+      body,
+      header,
+      section,
+      footer {
+        padding: 1rem;
+        margin: 1rem;
+        border: 1px solid;
+        border-collapse: collapse;
+      }
+  
+      /* Header Section */
+      .header-section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 2rem 1rem;
+      }
+  
+      img {
+        width: 100%;
+      }
+  
+      .profile-img-container {
+        width: 5rem;
+        margin: 0 1rem;
+      }
+  
+      .head-text {
+        margin: 0 1rem;
+      }
+  
+      /* Link Section */
+  
+      span {
+        margin: 0 5rem;
+      }
+  
+      .link-container {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 1rem;
+      }
+  
+      /* About Container */
+      .about-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 2rem 1rem;
+      }
+  
+      .about-text,
+      .about-audio,
+      .about-video {
+        margin: 1rem 2rem;
+      }
+  
+      /* Footer Section */
+      fieldset {
+        padding: 2rem;
+        width: fit-content;
+        margin: 2rem;
+      }
+  
+      footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+  
+      button {
+        padding: .2rem 1rem;
+      }
+    </style>
+  </head>
+  
+  <body>
+    <!-- Header Section -->
+    <header class="header-section">
+      <div class="profile-img-container">
+        <img src="data:image/jpeg;base64,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" alt="" />
+      </div>
+      <div class="head-text">
+        <h1 class="title">KARTHIK REDDY</h1>
+      </div>
+    </header>
+  
+    <!-- Link Section -->
+    <section class="link-container">
+      <div class="links">
+        <a href="#">Link 1</a>
+        <span>|</span>
+        <a href="#">Link 2</a>
+        <span>|</span>
+        <a href="#">Link 3</a>
+      </div>
+      <div class="search">
+        <input type="text" placeholder="Search" />
+      </div>
+    </section>
+  
+    <!-- About Section -->
+    <section class="about-container">
+      <div class="about-video">
+        <iframe width="600" height="355" src="https://www.youtube.com/embed/ktpG9OWzVPA" title="YouTube video player"
+          frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+      </div>
+      <div class="about-and-audio">
+        <div class="about-text">
+          Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry. Lorem Ipsum has been the industry's standard dummy text ever
+          since the 1500s, when an unknown printer took a galley of type and
+          scrambled it to make a type specimen book. It has survived not only
+          five centuries, but also the leap into electronic typesetting,
+          remaining essentially unchanged. It was popularised in the 1960s with
+          the release of Letraset sheets containing Lorem Ipsum passages, and
+          more recently with desktop publishing software like Aldus PageMaker
+          including versions of Lorem Ipsum.
+        </div>
+        <div class="about-audio">
+          <audio controls>
+            <source src="assets/audio/karunya-anthem.mp3" type="audio/mpeg" />
+          </audio>
+        </div>
+      </div>
+    </section>
+  
+    <footer class="footer">
+      <div class="first-row">
+        <form action="submit_resume.html" target="_blank">
+          <fieldset>
+            <legend>&nbsp;Sign up&nbsp;</legend>
+            <label for="username">*User Name: </label>
+            <input type="text" id="u_name" name="username" placeholder="username" required><br><br>
+            <label for="password">*Password: </label>
+            <input type="password" id="pass" name="password" placeholder="password" required><br><br>
+            <button>Submit</button>
+          </fieldset>
+        </form>
+      </div>
+  
+      <div class="second-row">
+        <h3>Contact us</h3>
+        <br>
+        <p>
+          Address line 1 <br><br> Address line 2 <br><br> Address line 3 <br><br>
+          mail id: <a href="mail:krishnaiahgari@karunya.edu.in">krishnaiahgari@karunya.edu.in</a>
+          <br><br>
+          Phone no: <a href="tel:+9652560603">+9652560603</a>
+        </p>
+      </div>
+  
+      <div class="third-row">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3998.9715472007742!2d76.74187231485904!3d10.936163992213222!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba866bd6aaaaaab%3A0xc650b8a75e7b51f0!2sKarunya%20Institute%20of%20Technology%20and%20Sciences%20(Deemed%20University)!5e1!3m2!1sen!2sin!4v1658938409893!5m2!1sen!2sin"
+          width="400" height="250" style="border: 0" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </footer>
+  </body>
+  
+  </html>
+  
